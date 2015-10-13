@@ -5,7 +5,9 @@ class MY_Loader extends CI_Loader {
 	public function view($view, $vars = array(), $return = FALSE)
 	{
 
-//FBF5 TESTGIT2
+
+//FBF5 STUDYGIT222
+
 
 		$CI =& get_instance();
 
