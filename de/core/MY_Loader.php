@@ -5,7 +5,7 @@ class MY_Loader extends CI_Loader {
 	public function view($view, $vars = array(), $return = FALSE)
 	{
 
-//FBF2
+//FBF3
 
 		$CI =& get_instance();
 
