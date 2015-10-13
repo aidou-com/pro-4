@@ -1,0 +1,39 @@
+@import "lib/variables";
+
+
+.teachers-list {
+	margin-top: 20px;
+	width: 100%;
+
+
+	li {
+		float: left;
+		position: relative;
+		width: 50%;
+		padding-bottom: 20px;
+		text-align: center;
+
+		.txt {
+			margin-left: auto;
+			margin-right: auto;
+			width: 250px;
+			
+		}
+
+		h4 {
+			padding-top: 10px;
+			padding-bottom: 20px;
+			font-size: 16px;
+		}
+
+		p {
+			padding-top: 18px;
+			color: #969696;
+			text-indent: 2em;
+			text-align: left;
+			font-size: 12px;
+			line-height: 1.8em;
+		}
+	}
+
+}

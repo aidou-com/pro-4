@@ -1,0 +1,25 @@
+@import "lib/variables";
+
+
+.contact-list {
+	margin-top: 20px;
+
+	li {
+		float: left;
+		position: relative;
+		width: 50%;
+		padding-bottom: 20px;
+
+		h4 {
+			float: left;
+			padding: 4px 7px;
+			background: #f75e01;
+			color: #fff;
+		}
+
+		.txt {
+			clear: left;
+		}
+	}
+
+}

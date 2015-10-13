@@ -1,0 +1,33 @@
+@import "lib/variables";
+@import "lib/mixins";
+ 
+.lang-switch {
+	float: right;
+	margin-top: 12px;
+
+	li {
+		float: left;
+		width: 58px;
+		height: 27px;
+		line-height: 27px;
+		text-align: center;
+
+		a {
+			display: block;
+			padding-left: 4px;
+			width: 58px;
+			height: 27px;
+			line-height: 27px;
+			text-align: center;
+			background: url(#{$images-url}/about/sprite.png) no-repeat;
+			color: #fff;
+			text-decoration: none;
+		}
+
+		a.cn {
+			padding-right: 4px;
+			padding-left: 0;
+			background-position: 0 -46px;
+		}
+	}
+}

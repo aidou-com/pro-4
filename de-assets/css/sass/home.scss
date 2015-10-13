@@ -1,0 +1,53 @@
+@import "lib/variables";
+
+.slogon-pic {
+	margin-top: 3px;
+}
+
+.tab-wrapper {
+	margin-top: 12px;
+
+	.tab-content {
+		margin-top: 1px;
+	}
+}
+
+
+.photo-wrapper {
+	margin-top: 5px;
+	padding-top: 30px;
+	width: 1000px;
+	height: 306px;
+	background: url(#{$images-url}/home/photo-bg.png) no-repeat;
+}
+
+
+#photo-list {
+	margin: 30px auto;
+	width: 840px;
+	height: 280px;
+	overflow: hidden;
+
+	img {
+		border: 2px solid white;
+		-moz-box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+		-webkit-box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+		-o-box-shadow: 10px 10px 10px rgba(0,0,0,0.3);	
+		box-shadow: 10px 10px 10px rgba(0,0,0,0.3);		
+	}
+
+	.controls {
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 0.8em;
+		color: blue;
+	}
+
+	.controls span {
+		cursor: pointer;
+		padding: 0px 10px;
+	}
+}
+
+
+

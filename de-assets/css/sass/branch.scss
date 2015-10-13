@@ -1,0 +1,246 @@
+@import "lib/variables";
+@import "lib/mixins";
+
+.nav-branch {
+	box-sizing:border-box;
+	width: 100%;
+	height: 230px;
+	background: #f0f0f0;
+	*padding-left: 13px;
+	@include clearfix();
+
+	li {
+		box-sizing:border-box;
+		position: relative;
+		float: left;
+		border: 5px #f0f0f0 solid;
+		width: 25%;
+		height: 220px;
+		*width: 23%;
+
+		
+
+		a {
+			position: absolute;
+			top:0;
+			left:0;
+			display: block;
+			width: 100%;
+			height: 220px;
+			overflow: hidden;
+			text-align: center;
+			text-decoration: none;
+			color: #f0f0f0;
+
+			span {
+				-webkit-transition:all .5s ease-in;
+				transition:all .5s ease-in;
+				position: absolute;
+				display: block;
+				padding-top: 180px;
+				width: 100%;
+				height: 40px;
+				background: rgba( 0 , 0 , 0, 0.65);
+				font-family: $font-family-hei;
+				font-size: 20px;
+
+			}
+		}
+
+		a:hover,
+		a.on {
+			color: #fff;
+			span {
+				-webkit-transition:all .5s ease-in;
+				transition:all .5s ease-in;
+				top: 170px;
+				padding-top: 10px;
+				height: 40px;
+			}
+		}
+	}
+}
+
+.breadcrumb-wrapper {
+	margin-top: 30px;
+	@include clearfix();
+}
+
+.branch-header-wrapper {
+	position: relative;
+	margin-top: 5px;
+	padding-left: 20px;
+	padding-right: 280px;
+	min-height: 240px;
+	border: 1px #f0f0f0 solid;
+	border-radius: 7px;
+	font-size: 12px;
+
+	h3 {
+		padding-top: 10px;
+		padding-bottom: 5px;
+		font-size: 26px;
+		border-bottom: 1px #f0f0f0 solid;
+	}
+
+	dl {
+		position: relative;
+		margin: 0;
+		padding: 0;
+		margin-top: 15px;
+		padding-left: 75px;
+	}
+	dt {
+		position: absolute;
+		top:0;
+		left:0;
+		color: #959595;
+
+		_left:-75px;
+
+	}
+	dd {
+
+	}
+
+	.map-wrapper {
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		width: 220px;
+		height: 220px;
+		background: #ccc;
+	}
+
+	.btn-wrapper {
+		a {
+			display: inline-block;
+			margin-top: 20px;
+			margin-bottom: 10px;
+			padding: 10px 25px;
+			background: $brand-primary;
+			border-radius: 7px;
+			text-decoration: none;
+			color: #fff;
+			font-size: 14px;
+		}
+		a:last-child {
+			margin-left: 20px;
+			background-color: #53b000;
+		}
+		a:hover {
+			text-decoration: none;
+			color: #fff;
+		}
+	}
+}
+
+.section {
+	margin-top: 35px;
+
+	.title {
+		height: 32px;
+		border-bottom: 1px $brand-primary solid;
+		font-size: 16px;
+
+
+		h3 {
+			display: inline-block;
+			padding: 0 35px 0 30px;
+			height: 32px;
+			line-height: 32px;
+			background: url(#{$images-url}/courses/sprite.png) no-repeat right -502px;
+			color: #fff;
+			*float: left;
+		}
+	}
+}
+
+.traffic {
+	font-size: 12px;
+	line-height: 1.8em;
+}
+
+.kaiban-list {
+	margin-top: 15px;
+	@include clearfix();
+	*clear: both;
+
+		
+
+	table {
+		width: 100%;
+	}
+
+	tr:nth-child(odd) {
+		background: #f0f0f0;
+	}
+	th {
+		height: 40px;
+		text-align: center;
+		font-weight: normal;
+		color: $brand-primary;
+		background: url(#{$images-url}/courses/sprite.png) no-repeat right -657px;
+	}
+	th:last-child {
+		background: none;
+	}
+	td {
+		padding: 5px 3px;
+		text-align: center;
+		font-size: 12px;
+		line-height: 18px;
+	}
+
+	.btn-zixun {
+		display: inline-block;
+		margin-left: 15px;
+		padding: 3px 13px;
+		background: $brand-primary;
+		border-radius: 4px;
+		color: #fff;
+		text-decoration: none;
+	}
+	.kaiban-more {
+		display: block;
+		height: 32px;
+		border-top: 2px $brand-primary solid;
+		background: url(#{$images-url}/courses/sprite.png) no-repeat center -590px #f0f0f0;
+		text-indent: -9999px;
+	}
+
+}
+
+.photo-list-wrapper {
+	padding: 20px 0;
+	background: #f0f0f0;
+}
+
+#photo-list {
+	margin: 30px auto;
+	width: 640px;
+	height: 240px;
+	overflow: hidden;
+
+	img {
+		border: 2px solid white;
+		-moz-box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+		-webkit-box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+		-o-box-shadow: 10px 10px 10px rgba(0,0,0,0.3);	
+		box-shadow: 10px 10px 10px rgba(0,0,0,0.3);		
+	}
+
+	.controls {
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 0.8em;
+		color: blue;
+	}
+
+	.controls span {
+		cursor: pointer;
+		padding: 0px 10px;
+	}
+}
+
+

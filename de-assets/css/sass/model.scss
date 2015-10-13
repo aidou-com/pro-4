@@ -1,0 +1,45 @@
+@import "lib/variables";
+@import "lib/mixins";
+ 
+.model-list {
+	height: 152px;
+	li {
+		float: left;
+		margin-left: 27px;
+	}
+	li.first {
+		margin-left: 0;
+	}
+}
+
+.article {
+	h4 {
+		display: inline-block;
+		margin-top: 40px;
+		margin-bottom: 10px;
+		padding: 0 10px;
+		height: 25px;
+		line-height: 25px;
+		color: #fff;
+	}
+
+	h4.model-001 {
+		background: #ff2400;
+	}
+	h4.model-002 {
+		background: #fb9000;
+	}
+	h4.model-003 {
+		background: #026796;
+	}
+	h4.model-004 {
+		background: #81c902;
+	}
+
+	.p-list {
+		padding-left: 18px;
+		li {
+			list-style: disc;
+		}
+	}
+}
