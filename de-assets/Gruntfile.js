@@ -17,6 +17,7 @@ module.exports = function(grunt) {
     'License: <%= pkg.license %>\n' +
     '*/\n',
 
+
     /**
      * Set directory paths
      */
