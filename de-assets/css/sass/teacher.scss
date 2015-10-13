@@ -1,0 +1,52 @@
+@import "lib/variables";
+@import "lib/mixins";
+
+.teacher-list {
+	ul {
+		width: 100%;
+	}
+	li {
+		display: table;
+		position: relative;
+		margin-top: 20px;
+		padding-left: 320px;
+		padding-bottom: 10px;
+		border-bottom: 1px #f0f0f0 solid;
+		min-height: 333px;
+		vertical-align: bottom;
+
+		line-height: 1.8em;
+
+		*height: 333px;
+
+
+		.img {
+			position: absolute;
+			bottom:10px;
+			left:0;
+
+			*left: -320px;
+		}
+		.txt {
+			display: table-cell;
+			vertical-align: bottom;
+		}
+
+		h4 {
+			font-size: 26px;
+			font-family: $font-family-hei;
+		}
+
+		h5 {
+			margin-top: 10px;
+			margin-bottom: 50px;
+			font-size: 16px;
+		}
+		p {
+			line-height: 1.8em;
+			text-indent: 2em;
+		}
+	}
+
+
+}

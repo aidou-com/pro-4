@@ -1,0 +1,33 @@
+//
+// Grid system
+// --------------------------------------------------
+
+
+// Container widths
+//
+// Set the container width, and override it for fixed navbars in media queries.
+
+.container {
+  @include container-fixed();
+
+
+//  @media (min-device-width: 641px) {
+ //   max-width: 640px;
+//  }
+  width: 1000px;
+  width: 50rem;
+//  max-width: 640px;
+}
+
+
+// Fluid container
+//
+// Utilizes the mixin meant for fixed width containers, but without any defined
+// width for fluid, full width layouts.
+
+.container-fluid {
+  @include container-fixed();
+}
+
+
+

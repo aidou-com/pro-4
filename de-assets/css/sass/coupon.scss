@@ -1,0 +1,85 @@
+@import "lib/variables";
+@import "lib/mixins";
+
+.coupon-wrapper {
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 650px;
+
+	.title {
+		height: 32px;
+		border-bottom: 1px $brand-primary solid;
+		font-size: 16px;
+
+
+		h3 {
+			display: inline-block;
+			padding: 0 35px 0 30px;
+			height: 32px;
+			line-height: 32px;
+			background: url(#{$images-url}/courses/sprite.png) no-repeat right -502px;
+			color: #fff;
+			*float: left;
+		}
+	}
+
+	.message {
+		padding: 10px;
+		margin: 50px 30px;
+		font-size: 24px;
+		line-height: 1.8em;
+		font-family: $font-family-hei;
+		color: #fa0059;
+
+		border-bottom: 2px #fa0059 solid;
+	}
+}
+
+.form-wrapper {
+	float: left;
+	margin-top: 12px;
+	width: 430px;
+	border-right: 1px #dddddd solid;
+
+
+	h4 {
+		margin: 10px 0;
+		font-size: 22px;
+		font-family: $font-family-hei;
+		color: #969696;
+	}
+
+	label {
+		padding-right: 10px;
+		color: #969696;
+	}
+
+	.form-group {
+		margin: 20px 0;
+
+	}
+
+	button {
+		margin-left: 70px;
+	}
+
+}
+
+.tip-wrapper {
+	float: right;
+	margin-top: 12px;
+	padding: 12px;
+	width: 184px;
+
+	background: url(#{$images-url}/coupon/tip-bg.png) no-repeat right top;
+
+	li {
+		margin-top: 22px;
+		font-size: 12px;
+		color: #949494;
+	}
+}
+
+
+
